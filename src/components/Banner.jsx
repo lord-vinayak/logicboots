@@ -3,46 +3,22 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import VANTA from "vanta/dist/vanta.trunk.min";
 import * as THREE from "three";
+import LetterGlitch from "../components/LetterGlitch";
 
 const Banner = () => {
-  const [vantaEffect, setVantaEffect] = useState(null);
-  const bannerRef = useRef(null);
-
-  useEffect(() => {
-    if (!vantaEffect) {
-      setVantaEffect(
-        VANTA({
-          el: "#rings",
-          THREE: THREE,
-          backgroundAlpha: 0.8,
-          backgroundColor: 0x222222,
-          color: 0x9155e5,
-          chaos: 1,
-          gyroControls: false,
-          minHeight: 200,
-          minWidth: 200,
-          mouseControls: true,
-          scale: 1,
-          scaleMobile: 1,
-          spacing: 0,
-          touchControls: true,
-        })
-      );
-    }
-
-    return () => {
-      if (vantaEffect) vantaEffect.destroy();
-    };
-  }, [vantaEffect]);
-
   return (
-    <div
-      ref={bannerRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Content */}
+      <div className="absolute inset-0 w-full h-full">
+        <LetterGlitch
+          glitchSpeed={50}
+          centerVignette={true}
+          outerVignette={false}
+          smooth={true}
+        />
+      </div>
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20" />
-
-      {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
