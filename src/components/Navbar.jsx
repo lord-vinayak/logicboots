@@ -38,11 +38,12 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center"
+              // className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center"
             >
-              <span className="text-white font-bold text-lg">L</span>
+              {/* <span className="text-white font-bold text-lg">L</span> */}
+              <img className='py-2 w-auto h-16' src="src/assets/logo.jpg" alt="Logicboots Logo" />
             </motion.div>
-            <span className="text-xl font-bold text-gray-900">Logicboots</span>
+            {/* <span className="text-xl font-bold text-gray-900">Logicboots</span> */}
           </Link>
 
           {/* Desktop Navigation */}

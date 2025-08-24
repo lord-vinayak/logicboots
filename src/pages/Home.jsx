@@ -4,6 +4,8 @@ import Banner from '../components/Banner';
 import SectionWrapper from '../components/SectionWrapper';
 import FeaturedCard from '../components/FeaturedCard';
 import ProductCard from '../components/ProductCard';
+import {Drone} from 'lucide-react'
+import {Stethoscope} from 'lucide-react'
 
 const Home = () => {
   const featuredItems = [
@@ -13,7 +15,7 @@ const Home = () => {
       description: 'Civil infrastructure inspection using drones + AI in real time. Currently deployed for Metro bridge inspections, expanding soon into railways. The drone detects cracks, leakage, bulging in bearings etc., in real time.',
       tagline: 'First in the world. IP (Patents) under filing.',
       color: 'from-purple-500 to-purple-700',
-      icon: '🚁'
+      icon: <Drone size={44} color="#ffffff" />
     },
     {
       id: 'atharvaai',
@@ -21,7 +23,7 @@ const Home = () => {
       description: 'A futuristic AI Co-Pilot for General Surgery. Provides real-time inputs to assist surgeons during operations.',
       tagline: 'First in the world. IP (Patents) under filing.',
       color: 'from-blue-500 to-blue-700',
-      icon: '⚕️'
+      icon: <Stethoscope size={44} color="#ffffff" />
     }
   ];
 
@@ -42,7 +44,7 @@ const Home = () => {
     },
     {
       id: 'nanobots-cancer',
-      title: 'Nanobots for Cancer Treatment',
+      title: 'Precise Drug Delivery',
       description: 'Revolutionary nanobots designed for targeted cancer treatment and drug delivery.',
       icon: '🔬',
       color: 'from-purple-500 to-purple-600'
@@ -150,6 +152,9 @@ const Home = () => {
             />
           ))}
         </div>
+      </SectionWrapper >
+      <SectionWrapper className="bg-gray-50"> 
+          <div className='text-center mb-12'></div>
       </SectionWrapper>
     </div>
   );
