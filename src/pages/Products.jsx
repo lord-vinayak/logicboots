@@ -2,6 +2,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SectionWrapper from '../components/SectionWrapper';
 import ProductCard from '../components/ProductCard';
+import { Stethoscope } from "lucide-react";
+import { Bot } from "lucide-react";
+import { Microscope } from "lucide-react";
+import { Rocket } from "lucide-react";
 
 const Products = () => {
   const products = [
@@ -9,28 +13,28 @@ const Products = () => {
       id: 'robotic-vacuum',
       title: 'AI-Powered Robotic Vacuum Cleaners',
       description: 'Advanced robotic vacuum cleaners with AI navigation and smart home integration.',
-      icon: '🤖',
+      icon: <Bot size={44} color="#ffffff" />,
       color: 'from-green-500 to-green-600'
     },
     {
       id: 'ai-stethoscope',
       title: 'AI-Powered Stethoscope with Remote Monitoring',
       description: 'Smart stethoscope with AI-powered diagnosis and remote patient monitoring capabilities.',
-      icon: '🩺',
+      icon: <Stethoscope size={44} color="#ffffff" />,
       color: 'from-red-500 to-red-600'
     },
     {
       id: 'nanobots-cancer',
-      title: 'Nanobots for Cancer Treatment',
+      title: 'Precise Drug Delivery',
       description: 'Revolutionary nanobots designed for targeted cancer treatment and drug delivery.',
-      icon: '🔬',
+      icon: <Microscope size={44} color="#ffffff" />,
       color: 'from-purple-500 to-purple-600'
     },
     {
       id: 'placeholder',
       title: 'Coming Soon',
       description: 'We are working on exciting new products. Stay tuned for more innovations.',
-      icon: '🚀',
+      icon: <Rocket size={44} color="#ffffff" />,
       color: 'from-gray-500 to-gray-600'
     }
   ];
