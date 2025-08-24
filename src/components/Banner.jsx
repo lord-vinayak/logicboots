@@ -8,7 +8,7 @@ import LetterGlitch from "../components/LetterGlitch";
 const Banner = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Content */}
+      {/* Container for the background effect and its overlay */}
       <div className="absolute inset-0 w-full h-full">
         <LetterGlitch
           glitchSpeed={50}
@@ -16,9 +16,9 @@ const Banner = () => {
           outerVignette={false}
           smooth={true}
         />
+        {/* The overlay is now a child of the background's container */}
+        <div className="absolute inset-0 bg-black/65" />
       </div>
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20" />
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
