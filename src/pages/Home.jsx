@@ -11,6 +11,8 @@ import { Bot } from "lucide-react";
 import { Microscope } from "lucide-react";
 import { Rocket } from "lucide-react";
 import { Marquee } from "../components/Marquee";
+import Divider from '@mui/material/Divider';
+
 
 const Home = () => {
   const featuredItems = [
@@ -76,10 +78,17 @@ const Home = () => {
       <SectionWrapper className="bg-white">
         <Marquee repeat={4} className="[--duration:20s]">
           <span>Robotics</span>
+          <Divider orientation="vertical" flexItem />
           <span>Artificial Intelligence</span>
+          <Divider orientation="vertical" flexItem />
           <span>Internet of Things</span>
+          <Divider orientation="vertical" flexItem />
           <span>Drones</span>
+          <Divider orientation="vertical" flexItem /> 
           <span>Medical Devices</span>
+          <Divider orientation="vertical" flexItem />
+          <span>Healthcare</span>
+          <Divider orientation="vertical" flexItem />
         </Marquee>
       </SectionWrapper>
 
@@ -169,12 +178,19 @@ const Home = () => {
       <SectionWrapper className="bg-white">
         <Marquee repeat={4} className="[--duration:20s]">
           <span>Healthcare</span>
+          <Divider orientation="vertical" flexItem />
           <span>Railways</span>
+          <Divider orientation="vertical" flexItem />
           <span>Metro</span>
+          <Divider orientation="vertical" flexItem />
           <span>Bridge</span>
+          <Divider orientation="vertical" flexItem />
           <span>Health Monitoring</span>
+          <Divider orientation="vertical" flexItem />
           <span>Civil Infrastructure Inspection</span>
+          <Divider orientation="vertical" flexItem />
           <span>Industrial Robotics</span>
+          <Divider orientation="vertical" flexItem />
         </Marquee>
       </SectionWrapper>
     </div>
