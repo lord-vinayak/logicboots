@@ -42,7 +42,7 @@ const Navbar = () => {
               {/* <span className="text-white font-bold text-lg">L</span> */}
               <img
                 className="py-2 w-auto h-16"
-                src="src/assets/logo.jpg"
+                src="/logo.jpg"
                 alt="Logicboots Logo"
               />
             </motion.div>
