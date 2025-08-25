@@ -190,21 +190,15 @@ const Home = () => {
           >
             Supported By
           </motion.h2>
-          {/* Logo Container */}
-          <div className="mt-12">
-            {/* Row 1: Centered with space between */}
-            <div className="flex justify-around items-center">
-              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo5} alt="IIT Roorkee" className="h-14 w-auto" />
-              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo1} alt="Company 2" className="h-14 w-auto" />
-              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo3} alt="MeitY" className="h-14 w-auto" />
-            </div>
+        </div>
 
-            {/* Row 2: Left-aligned with custom margin */}
-            <div className="mt-10 flex justify-center items-center gap-x-20 md:justify-start md:ml-64">
-              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo4} alt="STPI" className="h-14 w-auto" />
-              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo2} alt="TIDES" className="h-14 w-auto" />
-            </div>
-          </div>
+        {/* MODIFIED: This is now a single, responsive flex container */}
+        <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 px-4">
+          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo5} alt="TIDES IIT Roorkee" className="h-14 w-auto" />
+          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo1} alt="Indian Institute of Technology Roorkee" className="h-14 w-auto" />
+          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo3} alt="Ministry of Electronics and Information Technology" className="h-14 w-auto" />
+          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo4} alt="Software Technology Parks of India" className="h-14 w-auto" />
+          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo2} alt="Electropreneur Park" className="h-12 w-auto" />
         </div>
       </SectionWrapper>
 
