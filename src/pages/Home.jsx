@@ -13,6 +13,12 @@ import { Rocket } from "lucide-react";
 import { Marquee } from "../components/Marquee";
 import Divider from '@mui/material/Divider';
 
+import logo1 from '../assets/iitrLogo.png';
+import logo2 from '../assets/Screenshot_20250824_225151.png';
+import logo3 from '../assets/Screenshot_20250824_221237.png';
+import logo4 from '../assets/Screenshot_20250824_221402.png';
+import logo5 from '../assets/Untitleddesign7-1733725733552.png';
+
 
 const Home = () => {
   const featuredItems = [
@@ -171,10 +177,38 @@ const Home = () => {
           ))}
         </div>
       </SectionWrapper>
+
+      {/* Supported By Section */}
       <SectionWrapper className="bg-gray-50">
-        <div className="text-center mb-12"></div>
+        <div className="text-center mb-12">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+          >
+            Supported By
+          </motion.h2>
+          {/* Logo Container */}
+          <div className="mt-12">
+            {/* Row 1: Centered with space between */}
+            <div className="flex justify-around items-center">
+              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo5} alt="IIT Roorkee" className="h-14 w-auto" />
+              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo1} alt="Company 2" className="h-14 w-auto" />
+              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo3} alt="MeitY" className="h-14 w-auto" />
+            </div>
+
+            {/* Row 2: Left-aligned with custom margin */}
+            <div className="mt-10 flex justify-center items-center gap-x-20 md:justify-start md:ml-64">
+              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo4} alt="STPI" className="h-14 w-auto" />
+              <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo2} alt="TIDES" className="h-14 w-auto" />
+            </div>
+          </div>
+        </div>
       </SectionWrapper>
 
+      {/* Industries Marquee */}
       <SectionWrapper className="bg-white">
         <Marquee repeat={4} className="[--duration:20s]">
           <span>Healthcare</span>
