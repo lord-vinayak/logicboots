@@ -46,10 +46,10 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="font-geist text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             About Logicboots
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="font-manrope text-xl text-gray-600 leading-relaxed">
             Pioneering the future of AI-powered robotics to transform healthcare and household automation
           </p>
         </motion.div>
@@ -65,20 +65,20 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="prose prose-lg max-w-none"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="font-geist text-3xl font-bold text-gray-900 mb-6">
               Our Story
             </h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="font-manrope text-gray-600 mb-6 leading-relaxed">
               Logicboots was founded with a vision to bridge the gap between cutting-edge AI technology and practical, 
               life-changing applications. We recognized the immense potential of combining artificial intelligence with 
               robotics to solve real-world challenges in healthcare and household automation.
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="font-manrope text-gray-600 mb-6 leading-relaxed">
               As a dynamic startup based in India, we've assembled a team of passionate engineers, researchers, and 
               healthcare professionals who share our commitment to innovation and excellence. Our journey began with 
               a simple question: "How can we make AI and robotics more accessible and beneficial to everyday life?"
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="font-manrope text-gray-600 leading-relaxed">
               Today, we're proud to be at the forefront of this technological revolution, developing solutions that 
               not only meet current needs but anticipate future challenges in healthcare delivery and home automation.
             </p>
@@ -99,8 +99,8 @@ const About = () => {
               <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mb-6">
                 <span className="text-3xl">🎯</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="font-geist text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+              <p className="font-manrope text-gray-600 leading-relaxed">
                 To revolutionize healthcare delivery and household automation through innovative AI-powered robotics, 
                 making advanced technology accessible and beneficial to everyone while improving quality of life 
                 and operational efficiency.
@@ -118,8 +118,8 @@ const About = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
                 <span className="text-3xl">🔮</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="font-geist text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+              <p className="font-manrope text-gray-600 leading-relaxed">
                 To be the global leader in AI-powered robotics for healthcare and household automation, creating 
                 a future where intelligent machines work seamlessly with humans to enhance our capabilities and 
                 improve our daily lives.
@@ -137,7 +137,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-gray-900 mb-4"
+            className="font-geist text-3xl font-bold text-gray-900 mb-4"
           >
             Our Services
           </motion.h2>
@@ -146,7 +146,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg text-gray-600 max-w-2xl mx-auto"
+            className="font-manrope text-lg text-gray-600 max-w-2xl mx-auto"
           >
             Comprehensive solutions across healthcare robotics and household automation
           </motion.p>
@@ -165,10 +165,10 @@ const About = () => {
               <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary-200 transition-colors">
                 <span className="text-3xl">{service.icon}</span>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="font-geist text-xl font-semibold text-gray-900 mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="font-manrope text-gray-600 leading-relaxed">
                 {service.description}
               </p>
             </motion.div>
@@ -186,10 +186,10 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="font-geist text-3xl font-bold text-gray-900 mb-4">
               Our Expertise
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="font-manrope text-lg text-gray-600 max-w-2xl mx-auto">
               Deep knowledge and experience across multiple domains of technology and healthcare
             </p>
           </motion.div>
@@ -211,7 +211,7 @@ const About = () => {
                 className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm border border-gray-100"
               >
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">{skill}</span>
+                <span className="font-manrope text-gray-700 font-medium">{skill}</span>
               </motion.div>
             ))}
           </motion.div>
@@ -227,14 +227,14 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="font-geist text-3xl font-bold text-white mb-6">
             Ready to Transform the Future?
           </h2>
-          <p className="text-xl text-primary-100 mb-8 leading-relaxed">
+          <p className="font-manrope text-xl text-primary-100 mb-8 leading-relaxed">
             Join us in revolutionizing healthcare and automation with AI-powered robotics. 
             Let's build a smarter, healthier future together.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="font-geist flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@logicboots.com"
               className="btn-secondary bg-white text-primary-600 hover:bg-gray-100"
@@ -243,7 +243,7 @@ const About = () => {
             </a>
             <a
               href="/products"
-              className="btn-secondary bg-transparent border-2 border-white text-white hover:bg-white/10"
+              className="font-geist btn-secondary bg-transparent border-2 border-white text-white hover:bg-white/10"
             >
               Explore Products
             </a>

@@ -199,11 +199,11 @@ Stay tuned for announcements about our latest innovations. We're committed to pu
               <span className="text-4xl">{data.icon}</span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            <h1 className="font-geist text-4xl md:text-6xl font-bold text-gray-900 mb-4">
               {data.title}
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto">
+            <p className="font-manrope text-xl md:text-2xl text-gray-600 mb-6 max-w-3xl mx-auto">
               {data.subtitle}
             </p>
           </motion.div>

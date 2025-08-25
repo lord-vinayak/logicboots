@@ -49,10 +49,10 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h1 className="font-geist text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Our Products
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="font-manrope text-xl text-gray-600 leading-relaxed">
             Discover our range of AI-powered solutions designed to revolutionize healthcare and household automation
           </p>
         </motion.div>
@@ -80,22 +80,22 @@ const Products = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2 className="font-geist text-3xl font-bold text-white mb-6">
             Ready to Transform Your World?
           </h2>
-          <p className="text-xl text-primary-100 mb-8 leading-relaxed">
+          <p className="font-manrope text-xl text-primary-100 mb-8 leading-relaxed">
             Join the revolution in AI-powered robotics and experience the future of healthcare and automation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@logicboots.com"
-              className="btn-secondary bg-white text-primary-600 hover:bg-gray-100"
+              className="font-geist btn-secondary bg-white text-primary-600 hover:bg-gray-100"
             >
               Get in Touch
             </a>
             <Link
               to="/about"
-              className="btn-secondary bg-transparent border-2 border-white text-white hover:bg-white/10"
+              className="font-geist btn-secondary bg-transparent border-2 border-white text-white hover:bg-white/10"
             >
               Learn More About Us
             </Link>

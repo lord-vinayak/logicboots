@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import VANTA from "vanta/dist/vanta.trunk.min";
 import * as THREE from "three";
 import LetterGlitch from "../components/LetterGlitch";
+import Flipper from "../components/Flipper"
 
 const Banner = () => {
   return (
@@ -30,14 +31,14 @@ const Banner = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-            Logicboots
+            <Flipper >LogicBoots</Flipper>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+            className="font-manrope text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
             A dynamic startup revolutionizing healthcare and household
             automation with AI-powered robotics.
           </motion.p>
@@ -46,7 +47,7 @@ const Banner = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+            className="font-manrope text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
             Recognised & Supported by Tides, Entrepreneurial Park & PGI
           </motion.p>
 
@@ -57,12 +58,12 @@ const Banner = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               to="/about"
-              className="btn-primary text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20">
+              className="font-geist btn-primary text-lg px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20">
               Learn More
             </Link>
             <Link
               to="/products"
-              className="btn-secondary text-lg px-8 py-4 bg-transparent border-2 border-white/30 text-white hover:bg-white/10">
+              className="font-geist btn-secondary text-lg px-8 py-4 bg-transparent border-2 border-white/30 text-white hover:bg-white/10">
               Our Products
             </Link>
           </motion.div>

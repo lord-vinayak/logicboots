@@ -21,11 +21,11 @@ const ProductCard = ({ id, title, description, icon, color = 'from-blue-500 to-b
           </div>
           
           {/* Content */}
-          <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+          <h3 className="font-geist text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
             {title}
           </h3>
           
-          <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors">
+          <p className="font-manrope text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors">
             {description}
           </p>
           

@@ -55,7 +55,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`relative text-sm font-medium transition-colors duration-200 ${
+                className={`font-geist relative text-sm font-medium transition-colors duration-200 ${
                   location.pathname === item.path
                     ? isScrolled
                       ? "text-primary-600"

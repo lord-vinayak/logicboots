@@ -11,11 +11,11 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">L</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">
+              <span className="font-geist text-xl font-bold text-gray-900">
                 Logicboots
               </span>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed max-w-md">
+            <p className="font-manrope text-gray-600 text-sm leading-relaxed max-w-md">
               A dynamic startup revolutionizing healthcare and household
               automation with AI-powered robotics.
             </p>
@@ -23,26 +23,26 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Quick Links</h3>
+            <h3 className="font-manrope font-bold text-gray-900 mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   to="/"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors">
+                  className="font-manrope text-gray-600 hover:text-primary-600 text-sm transition-colors">
                   Home
                 </Link>
               </li>
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors">
+                  className="font-manrope text-gray-600 hover:text-primary-600 text-sm transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
                 <Link
                   to="/products"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors">
+                  className="font-manrope text-gray-600 hover:text-primary-600 text-sm transition-colors">
                   Products
                 </Link>
               </li>
@@ -51,13 +51,13 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Contact</h3>
+            <h3 className="font-manrope font-bold text-gray-900 mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-gray-600 text-sm">
-                <span className="font-medium">Email:</span> info@logicboots.com
+                <span className="font-manrope font-medium">Email:</span> info@logicboots.com
               </li>
               <li className="text-gray-600 text-sm">
-                <span className="font-medium">Location:</span> Tides, IIT
+                <span className="font-manrope font-medium">Location:</span> Tides, IIT
                 Roorkee, India
               </li>
             </ul>
@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">
+          <p className="font-manrope text-gray-500 text-sm">
             © 2025 Logicboots. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">

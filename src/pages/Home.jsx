@@ -81,7 +81,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Banner */}
       <Banner />
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-white font-manrope">
         <Marquee repeat={4} className="[--duration:20s]">
           <span>Robotics</span>
           <Divider orientation="vertical" flexItem />
@@ -106,16 +106,16 @@ const Home = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-center max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-geist font-bold text-gray-900 mb-6">
             Revolutionizing Healthcare & Automation
           </h2>
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          <p className="text-lg font-manrope text-gray-600 mb-8 leading-relaxed">
             At Logicboots, we're pioneering the future of AI-powered robotics,
             creating solutions that transform healthcare delivery and household
             automation. Our cutting-edge technology combines artificial
             intelligence with robotics to solve real-world challenges.
           </p>
-          <Link to="/about" className="btn-primary">
+          <Link to="/about" className="font-geist btn-primary">
             Learn More About Us
           </Link>
         </motion.div>
@@ -129,7 +129,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Featured in MedTech
           </motion.h2>
           <motion.p
@@ -137,7 +137,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg text-gray-600 max-w-2xl mx-auto">
+            className="font-manrope text-lg text-gray-600 max-w-2xl mx-auto">
             Our innovative solutions are making waves in the medical technology
             industry
           </motion.p>
@@ -158,7 +158,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Our Products
           </motion.h2>
           <motion.p
@@ -166,7 +166,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-lg text-gray-600 max-w-2xl mx-auto">
+            className="font-manrope text-lg text-gray-600 max-w-2xl mx-auto">
             Discover our range of AI-powered solutions designed to improve lives
           </motion.p>
         </div>
@@ -186,7 +186,7 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4"
           >
             Supported By
           </motion.h2>
@@ -210,7 +210,7 @@ const Home = () => {
 
       {/* Industries Marquee */}
       <SectionWrapper className="bg-white">
-        <Marquee repeat={4} className="[--duration:20s]">
+        <Marquee repeat={4} className="[--duration:20s] font-manrope">
           <span>Healthcare</span>
           <Divider orientation="vertical" flexItem />
           <span>Railways</span>
