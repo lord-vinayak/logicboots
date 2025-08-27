@@ -81,7 +81,7 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Banner */}
       <Banner />
-      <SectionWrapper className="bg-white font-manrope">
+      <SectionWrapper className="bg-gray-50 font-manrope">
         <Marquee repeat={4} className="[--duration:20s]">
           <span>Robotics</span>
           <Divider orientation="vertical" flexItem />

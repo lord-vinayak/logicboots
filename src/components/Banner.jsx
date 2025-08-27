@@ -48,7 +48,7 @@ const Banner = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="font-manrope text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Recognised & Supported by Tides, Entrepreneurial Park & PGI
+            Recognised & Supported by Tides, Electropreneur Park & PGI
           </motion.p>
 
           <motion.div
