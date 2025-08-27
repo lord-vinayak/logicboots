@@ -134,11 +134,7 @@ const Home = () => {
               alt="image 2"
               className="h-full w-full object-cover"
             />
-            <img
-              src="/v3.jpg"
-              alt="image 3"
-              className="h-full w-full object-cover"
-            />
+            
             <img
               src="/v4.jpg"
               alt="image 4"
