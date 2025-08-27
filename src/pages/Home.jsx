@@ -23,15 +23,6 @@ import logo5 from '../assets/Untitleddesign7-1733725733552.png';
 const Home = () => {
   const featuredItems = [
     {
-      id: "dinkarai",
-      title: "DinkarAI",
-      description:
-        "Civil infrastructure inspection using drones + AI in real time. Currently deployed for Metro bridge inspections, expanding soon into railways. The drone detects cracks, leakage, bulging in bearings etc., in real time.",
-      tagline: "First in the world. IP (Patents) under filing.",
-      color: "from-purple-500 to-purple-700",
-      icon: <Drone size={44} color="#ffffff" />,
-    },
-    {
       id: "atharvaai",
       title: "AtharvaAI",
       description:
@@ -39,6 +30,15 @@ const Home = () => {
       tagline: "First in the world. IP (Patents) under filing.",
       color: "from-blue-500 to-blue-700",
       icon: <Dna size={44} color="#ffffff" />,
+    },
+    {
+      id: "ai-stethoscope",
+      title: "CoeurAI - Stethoscope ",
+      description:
+        "Smart stethoscope with AI-powered diagnosis and remote patient monitoring capabilities.",
+      tagline: "First in the world. IP (Patents) under filing.",
+      color: "from-purple-500 to-purple-700",
+      icon: <Stethoscope size={44} color="#ffffff" />,
     },
   ];
 
@@ -52,11 +52,11 @@ const Home = () => {
       color: "from-green-500 to-green-600",
     },
     {
-      id: "ai-stethoscope",
-      title: "AI-Powered Stethoscope with Remote Monitoring",
+      id: "dinkarai",
+      title: "DinkarAI",
       description:
-        "Smart stethoscope with AI-powered diagnosis and remote patient monitoring capabilities.",
-      icon: <Stethoscope size={44} color="#ffffff" />,
+        "Civil infrastructure inspection using drones + AI in real time.",
+      icon: <Drone size={44} color="#ffffff" />,
       color: "from-red-500 to-red-600",
     },
     {
