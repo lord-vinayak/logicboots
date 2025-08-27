@@ -14,6 +14,7 @@ const ProductDetail = () => {
     "robotic-vacuum": {
       title: "AI-Powered Robotic Vacuum Cleaners",
       subtitle: "Smart Home Cleaning with Advanced AI Navigation",
+      image: "src/assets/IMG-20250827-WA0010.jpg",
       description:
         "Our AI-powered robotic vacuum cleaners represent the next generation of smart home cleaning, combining cutting-edge robotics with intelligent navigation and automation.",
       longDescription: `These advanced robotic vacuum cleaners utilize sophisticated AI algorithms to navigate complex home environments, learning from each cleaning session to optimize performance. The system features advanced obstacle detection, room mapping, and adaptive cleaning patterns that ensure thorough coverage while avoiding potential hazards.
@@ -208,6 +209,10 @@ Stay tuned for announcements about our latest innovations. We're committed to pu
             </p>
           </motion.div>
         </div>
+      </SectionWrapper>
+
+      <SectionWrapper className={`${data.bgColor}`}>
+        
       </SectionWrapper>
 
       {/* Description Section */}
