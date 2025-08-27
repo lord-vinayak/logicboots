@@ -11,14 +11,14 @@ import { Bot } from "lucide-react";
 import { Microscope } from "lucide-react";
 import { Rocket } from "lucide-react";
 import { Marquee } from "../components/Marquee";
-import Divider from '@mui/material/Divider';
+import Divider from "@mui/material/Divider";
+import { Carousel } from "@material-tailwind/react";
 
-import logo1 from '../assets/iitrLogo.png';
-import logo2 from '../assets/Screenshot_20250824_225151.png';
-import logo3 from '../assets/Screenshot_20250824_221237.png';
-import logo4 from '../assets/Screenshot_20250824_221402.png';
-import logo5 from '../assets/Untitleddesign7-1733725733552.png';
-
+import logo1 from "../assets/iitrLogo.png";
+import logo2 from "../assets/Screenshot_20250824_225151.png";
+import logo3 from "../assets/Screenshot_20250824_221237.png";
+import logo4 from "../assets/Screenshot_20250824_221402.png";
+import logo5 from "../assets/Untitleddesign7-1733725733552.png";
 
 const Home = () => {
   const featuredItems = [
@@ -90,7 +90,7 @@ const Home = () => {
           <span>Internet of Things</span>
           <Divider orientation="vertical" flexItem />
           <span>Drones</span>
-          <Divider orientation="vertical" flexItem /> 
+          <Divider orientation="vertical" flexItem />
           <span>Medical Devices</span>
           <Divider orientation="vertical" flexItem />
           <span>Healthcare</span>
@@ -119,6 +119,53 @@ const Home = () => {
             Learn More About Us
           </Link>
         </motion.div>
+      </SectionWrapper>
+
+      <SectionWrapper className="bg-white">
+        <div className="max-w-4xl mx-auto">
+          <Carousel className="rounded-xl h-96" autoplay={true} loop={true} autoplayDelay={2000}>
+            <img
+              src="/v1.jpg"
+              alt="image 1"
+              className="h-full w-full object-cover"
+            />
+            <img
+              src="/v2.jpg"
+              alt="image 2"
+              className="h-full w-full object-cover"
+            />
+            <img
+              src="/v3.jpg"
+              alt="image 3"
+              className="h-full w-full object-cover"
+            />
+            <img
+              src="/v4.jpg"
+              alt="image 4"
+              className="h-full w-full object-cover"
+            />
+            <img
+              src="/v5.jpg"
+              alt="image 5"
+              className="h-full w-full object-cover"
+            />
+            <img
+              src="/v6.jpg"
+              alt="image 6"
+              className="h-full w-full object-cover"
+            />
+            <img
+              src="/v7.jpg"
+              alt="image 7"
+              className="h-full w-full object-cover"
+            />
+            <img
+              src="/v8.jpg"
+              alt="image 8"
+              className="h-full w-full object-cover"
+            />
+          </Carousel>
+        </div>
       </SectionWrapper>
 
       {/* Featured Section */}
@@ -186,19 +233,43 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4"
-          >
+            className="font-geist text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Supported By
           </motion.h2>
         </div>
 
         {/* MODIFIED: This is now a single, responsive flex container */}
         <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 px-4">
-          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo5} alt="TIDES IIT Roorkee" className="h-14 w-auto" />
-          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo1} alt="Indian Institute of Technology Roorkee" className="h-14 w-auto" />
-          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo3} alt="Ministry of Electronics and Information Technology" className="h-14 w-auto" />
-          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo4} alt="Software Technology Parks of India" className="h-14 w-auto" />
-          <motion.img variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} src={logo2} alt="Electropreneur Park" className="h-12 w-auto" />
+          <motion.img
+            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+            src={logo5}
+            alt="TIDES IIT Roorkee"
+            className="h-14 w-auto"
+          />
+          <motion.img
+            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+            src={logo1}
+            alt="Indian Institute of Technology Roorkee"
+            className="h-14 w-auto"
+          />
+          <motion.img
+            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+            src={logo3}
+            alt="Ministry of Electronics and Information Technology"
+            className="h-14 w-auto"
+          />
+          <motion.img
+            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+            src={logo4}
+            alt="Software Technology Parks of India"
+            className="h-14 w-auto"
+          />
+          <motion.img
+            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+            src={logo2}
+            alt="Electropreneur Park"
+            className="h-12 w-auto"
+          />
         </div>
       </SectionWrapper>
 
