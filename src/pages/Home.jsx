@@ -121,7 +121,7 @@ const Home = () => {
         </motion.div>
       </SectionWrapper>
 
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <Carousel className="rounded-xl h-96" autoplay={true} loop={true} autoplayDelay={2000}>
             <img
@@ -169,7 +169,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* Featured Section */}
-      <SectionWrapper className="bg-gray-50">
+      <SectionWrapper className="bg-white">
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -198,7 +198,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* Products Section */}
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-gray-50">
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -226,7 +226,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* Supported By Section */}
-      <SectionWrapper className="bg-gray-50">
+      <SectionWrapper className="bg-white">
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -238,42 +238,24 @@ const Home = () => {
           </motion.h2>
         </div>
 
-        {/* === EDITED SECTION START === */}
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 items-center">
-          {/* Top Row Logos (Desktop) */}
-          <motion.img 
-            src={logo1} 
-            alt="TIDES IIT Roorkee" 
-            className="w-auto h-[80px] lg:h-[140px] justify-self-center col-span-1 lg:col-span-2" 
-          />
-          <motion.img 
-            src={logo2} 
-            alt="Indian Institute of Technology Roorkee" 
-            className="w-auto h-[40px] lg:h-[70px] justify-self-center col-span-1 lg:col-span-2" 
-          />
-          <motion.img 
-            src={logo3} 
-            alt="Software Technology Parks of India" 
-            className="w-auto h-[70px] lg:h-[120px] justify-self-center col-span-2 lg:col-span-2" 
-          />
-          
-          {/* Bottom Row Logos (Desktop) */}
-          <motion.img 
-            src={logo4} 
-            alt="Electropreneurial Park" 
-            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-start-2 lg:col-span-2" 
-          />
-          <motion.img 
-            src={logo5} 
-            alt="MedTech" 
-            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-span-2" 
-          />
+        <div>
+          {/* Row 1: Centered */}
+          <div className="flex justify-around items-center">
+            <motion.img src={logo1} alt="TIDES IIT Roorkee" className="h-[120px] w-auto" />
+            <motion.img src={logo2} alt="Indian Institute of Technology Roorkee" className="h-14 w-auto" />
+            <motion.img src={logo3} alt="Software Technology Parks of India" className="h-[120px] w-auto" />
+          </div>
+
+          {/* Row 2: Left-aligned with custom margin */}
+          <div className="mt-10 flex justify-center items-center gap-x-[120px] md:justify-start md:ml-80">
+            <motion.img src={logo4} alt="Electropreneurial Park" className="h-[90px] w-auto" />
+            <motion.img src={logo5} alt="MedTech" className="h-[90px] w-auto" />
+          </div>
         </div>
-        {/* === EDITED SECTION END === */}
       </SectionWrapper>
 
       {/* Industries Marquee */}
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-gray-50">
         <Marquee repeat={4} className="[--duration:20s] font-manrope">
           <span>Healthcare</span>
           <Divider orientation="vertical" flexItem />

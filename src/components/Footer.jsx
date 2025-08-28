@@ -7,12 +7,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">L</span>
-              </div>
+            <div className="flex items-center space-x-2 mb-1">
               <span className="font-geist text-xl font-bold text-gray-900">
-                Logicboots
+                LogicBoots
               </span>
             </div>
             <p className="font-manrope text-gray-600 text-sm leading-relaxed max-w-md">
@@ -67,7 +64,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="font-manrope text-gray-500 text-sm">
-            © 2025 Logicboots. All rights reserved.
+            © 2025 LogicBoots. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a
