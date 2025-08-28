@@ -14,11 +14,11 @@ import { Marquee } from "../components/Marquee";
 import Divider from "@mui/material/Divider";
 import { Carousel } from "@material-tailwind/react";
 
-import logo1 from "../assets/iitrLogo.png";
-import logo2 from "../assets/Screenshot_20250824_225151.png";
-import logo3 from "../assets/Screenshot_20250824_221237.png";
-import logo4 from "../assets/Screenshot_20250824_221402.png";
-import logo5 from "../assets/Untitleddesign7-1733725733552.png";
+import logo1 from "../assets/tides.png";
+import logo2 from "../assets/iitrLogo.png";
+import logo3 from "../assets/stpi.png";
+import logo4 from "../assets/electropreneurial.png";
+import logo5 from "../assets/medtech.png";
 
 const Home = () => {
   const featuredItems = [
@@ -238,39 +238,22 @@ const Home = () => {
           </motion.h2>
         </div>
 
-        {/* MODIFIED: This is now a single, responsive flex container */}
-        <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 px-4">
-          <motion.img
-            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-            src={logo5}
-            alt="TIDES IIT Roorkee"
-            className="h-14 w-auto"
-          />
-          <motion.img
-            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-            src={logo1}
-            alt="Indian Institute of Technology Roorkee"
-            className="h-14 w-auto"
-          />
-          <motion.img
-            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-            src={logo3}
-            alt="Ministry of Electronics and Information Technology"
-            className="h-14 w-auto"
-          />
-          <motion.img
-            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-            src={logo4}
-            alt="Software Technology Parks of India"
-            className="h-14 w-auto"
-          />
-          <motion.img
-            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-            src={logo2}
-            alt="Electropreneur Park"
-            className="h-12 w-auto"
-          />
+        {/* === EDITED SECTION START === */}
+        <div>
+          {/* Row 1: Centered */}
+          <div className="flex justify-around items-center">
+            <motion.img src={logo1} alt="TIDES IIT Roorkee" className="h-[120px] w-auto" />
+            <motion.img src={logo2} alt="Indian Institute of Technology Roorkee" className="h-14 w-auto" />
+            <motion.img src={logo3} alt="Software Technology Parks of India" className="h-[120px] w-auto" />
+          </div>
+
+          {/* Row 2: Left-aligned with custom margin */}
+          <div className="mt-10 flex justify-center items-center gap-x-[120px] md:justify-start md:ml-80">
+            <motion.img src={logo4} alt="Electropreneurial Park" className="h-[90px] w-auto" />
+            <motion.img src={logo5} alt="MedTech" className="h-[90px] w-auto" />
+          </div>
         </div>
+        {/* === EDITED SECTION END === */}
       </SectionWrapper>
 
       {/* Industries Marquee */}

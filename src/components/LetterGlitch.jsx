@@ -157,10 +157,12 @@ const LetterGlitch = ({
   };
 
   const drawLetters = () => {
-    if (!context.current || letters.current.length === 0) return;
+  // Make sure canvas exists before trying to access it
+    if (!canvasRef.current || !context.current || letters.current.length === 0) return;
+
+    const rect = canvasRef.current.getBoundingClientRect();
     const ctx = context.current;
-    const { width, height } = canvasRef.current.getBoundingClientRect();
-    ctx.clearRect(0, 0, width, height);
+    ctx.clearRect(0, 0, rect.width, rect.height);
     ctx.font = `${fontSize}px monospace`;
     ctx.textBaseline = "top";
 
@@ -171,6 +173,7 @@ const LetterGlitch = ({
       ctx.fillText(letter.char, x, y);
     });
   };
+
 
   const updateLetters = () => {
     if (!letters.current || letters.current.length === 0) return;
@@ -235,17 +238,17 @@ const LetterGlitch = ({
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas) return; // <-- Prevents null reference
 
     context.current = canvas.getContext("2d");
     resizeCanvas();
     animate();
 
     let resizeTimeout;
-
     const handleResize = () => {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(() => {
+        if (!canvasRef.current) return; // <-- Safety check
         cancelAnimationFrame(animationRef.current);
         resizeCanvas();
         animate();
@@ -258,8 +261,9 @@ const LetterGlitch = ({
       cancelAnimationFrame(animationRef.current);
       window.removeEventListener("resize", handleResize);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [glitchSpeed, smooth]);
+
 
   return (
     <div className="relative w-full h-full bg-black overflow-hidden">
