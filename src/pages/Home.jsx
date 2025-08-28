@@ -121,7 +121,7 @@ const Home = () => {
         </motion.div>
       </SectionWrapper>
 
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <Carousel className="rounded-xl h-96" autoplay={true} loop={true} autoplayDelay={2000}>
             <img
@@ -169,7 +169,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* Featured Section */}
-      <SectionWrapper className="bg-gray-50">
+      <SectionWrapper className="bg-white">
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -198,7 +198,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* Products Section */}
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-gray-50">
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -226,7 +226,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* Supported By Section */}
-      <SectionWrapper className="bg-gray-50">
+      <SectionWrapper className="bg-white">
         <div className="text-center mb-12">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -238,7 +238,6 @@ const Home = () => {
           </motion.h2>
         </div>
 
-        {/* MODIFIED: This is now a single, responsive flex container */}
         <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 px-4">
           <motion.img
             variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
@@ -274,7 +273,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* Industries Marquee */}
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-gray-50">
         <Marquee repeat={4} className="[--duration:20s] font-manrope">
           <span>Healthcare</span>
           <Divider orientation="vertical" flexItem />
