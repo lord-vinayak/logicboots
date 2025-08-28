@@ -41,7 +41,7 @@ const Home = () => {
       icon: <Dna size={44} color="#ffffff" />,
     },
     {
-      id: "ai-stethoscope",
+      id: "stethoscope",
       title: "CoeurAI - Stethoscope ",
       description:
         "Smart stethoscope with AI-powered diagnosis and remote patient monitoring capabilities.",
@@ -199,10 +199,45 @@ const Home = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {featuredItems.map((item, index) => (
-            <FeaturedCard key={item.id} {...item} delay={index * 0.2} />
-          ))}
+        <div className="flex flex-wrap justify-center gap-8 p-4">
+          <Card className="w-96">
+            <CardHeader color="blue-gray" className="relative h-56">
+              <img src="/q7.jpg" alt="card-image" />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-2">
+                AtharvaAI
+              </Typography>
+              <Typography>
+                A futuristic AI Co-Pilot for General Surgery. Provides real-time
+                inputs to assist surgeons during operations.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Link to="/featured/atharvaai">
+                <Button>Read More</Button>
+              </Link>
+            </CardFooter>
+          </Card>
+          <Card className="w-96">
+            <CardHeader color="blue-gray" className="relative h-56">
+              <img src="/q6.jpg" alt="card-image" />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-2">
+                CoeurAI - Stethoscope
+              </Typography>
+              <Typography>
+                Smart stethoscope with AI-powered diagnosis and remote patient
+                monitoring capabilities.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Link to="/products/ai-stethoscope">
+                <Button>Read More</Button>
+              </Link>
+            </CardFooter>
+          </Card>
         </div>
       </SectionWrapper>
 
