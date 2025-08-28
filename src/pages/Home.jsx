@@ -239,19 +239,35 @@ const Home = () => {
         </div>
 
         {/* === EDITED SECTION START === */}
-        <div>
-          {/* Row 1: Centered */}
-          <div className="flex justify-around items-center">
-            <motion.img src={logo1} alt="TIDES IIT Roorkee" className="h-[120px] w-auto" />
-            <motion.img src={logo2} alt="Indian Institute of Technology Roorkee" className="h-14 w-auto" />
-            <motion.img src={logo3} alt="Software Technology Parks of India" className="h-[120px] w-auto" />
-          </div>
-
-          {/* Row 2: Left-aligned with custom margin */}
-          <div className="mt-10 flex justify-center items-center gap-x-[120px] md:justify-start md:ml-80">
-            <motion.img src={logo4} alt="Electropreneurial Park" className="h-[90px] w-auto" />
-            <motion.img src={logo5} alt="MedTech" className="h-[90px] w-auto" />
-          </div>
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 items-center">
+          {/* Top Row Logos (Desktop) */}
+          <motion.img 
+            src={logo1} 
+            alt="TIDES IIT Roorkee" 
+            className="w-auto h-[80px] lg:h-[140px] justify-self-center col-span-1 lg:col-span-2" 
+          />
+          <motion.img 
+            src={logo2} 
+            alt="Indian Institute of Technology Roorkee" 
+            className="w-auto h-[40px] lg:h-[70px] justify-self-center col-span-1 lg:col-span-2" 
+          />
+          <motion.img 
+            src={logo3} 
+            alt="Software Technology Parks of India" 
+            className="w-auto h-[70px] lg:h-[120px] justify-self-center col-span-2 lg:col-span-2" 
+          />
+          
+          {/* Bottom Row Logos (Desktop) */}
+          <motion.img 
+            src={logo4} 
+            alt="Electropreneurial Park" 
+            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-start-2 lg:col-span-2" 
+          />
+          <motion.img 
+            src={logo5} 
+            alt="MedTech" 
+            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-span-2" 
+          />
         </div>
         {/* === EDITED SECTION END === */}
       </SectionWrapper>
