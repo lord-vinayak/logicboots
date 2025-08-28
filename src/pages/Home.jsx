@@ -13,6 +13,15 @@ import { Rocket } from "lucide-react";
 import { Marquee } from "../components/Marquee";
 import Divider from "@mui/material/Divider";
 import { Carousel } from "@material-tailwind/react";
+import FlipCard from "../components/FlipCard";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
 
 import logo1 from "../assets/tides.png";
 import logo2 from "../assets/iitrLogo.png";
@@ -44,36 +53,32 @@ const Home = () => {
 
   const products = [
     {
-      id: "robotic-vacuum",
-      title: "AI-Powered Robotic Vacuum Cleaners",
+      title: "Robotic Vacuum",
+      subtitle: "AI-Powered Robotic Vacuum Cleaners",
       description:
         "Advanced robotic vacuum cleaners with AI navigation and smart home integration.",
-      icon: <Bot size={44} color="#ffffff" />,
-      color: "from-green-500 to-green-600",
+      image: "/q1.jpeg",
     },
     {
-      id: "dinkarai",
       title: "DinkarAI",
+      subtitle: "AI-Powered Unmanned Aerial Vehicles",
       description:
         "Civil infrastructure inspection using drones + AI in real time.",
-      icon: <Drone size={44} color="#ffffff" />,
-      color: "from-red-500 to-red-600",
+      image: "/q2.jpg",
     },
     {
-      id: "nanobots-cancer",
-      title: "Precise Drug Delivery",
+      title: "Nanobots Cancer",
+      subtitle: "Precise Drug Delivery",
       description:
         "Revolutionary nanobots designed for targeted cancer treatment and drug delivery.",
-      icon: <Microscope size={44} color="#ffffff" />,
-      color: "from-purple-500 to-purple-600",
+      image: "/q4.jpg",
     },
     {
-      id: "placeholder",
-      title: "Coming Soon",
+      title: "More...",
+      subtitle: "Coming Soon",
       description:
         "We are working on exciting new products. Stay tuned for more innovations.",
-      icon: <Rocket size={44} color="#ffffff" />,
-      color: "from-gray-500 to-gray-600",
+      image: "/q5.jpg",
     },
   ];
 
@@ -123,7 +128,11 @@ const Home = () => {
 
       <SectionWrapper className="bg-white">
         <div className="max-w-4xl mx-auto">
-          <Carousel className="rounded-xl h-96" autoplay={true} loop={true} autoplayDelay={2000}>
+          <Carousel
+            className="rounded-xl h-96"
+            autoplay={true}
+            loop={true}
+            autoplayDelay={2000}>
             <img
               src="/v1.jpg"
               alt="image 1"
@@ -218,9 +227,9 @@ const Home = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
-            <ProductCard key={product.id} {...product} delay={index * 0.1} />
+            <FlipCard key={product.id} {...product} />
           ))}
         </div>
       </SectionWrapper>
@@ -241,32 +250,32 @@ const Home = () => {
         {/* === EDITED SECTION START === */}
         <div className="grid grid-cols-2 lg:grid-cols-6 gap-8 items-center">
           {/* Top Row Logos (Desktop) */}
-          <motion.img 
-            src={logo1} 
-            alt="TIDES IIT Roorkee" 
-            className="w-auto h-[80px] lg:h-[140px] justify-self-center col-span-1 lg:col-span-2" 
+          <motion.img
+            src={logo1}
+            alt="TIDES IIT Roorkee"
+            className="w-auto h-[80px] lg:h-[140px] justify-self-center col-span-1 lg:col-span-2"
           />
-          <motion.img 
-            src={logo2} 
-            alt="Indian Institute of Technology Roorkee" 
-            className="w-auto h-[40px] lg:h-[70px] justify-self-center col-span-1 lg:col-span-2" 
+          <motion.img
+            src={logo2}
+            alt="Indian Institute of Technology Roorkee"
+            className="w-auto h-[40px] lg:h-[70px] justify-self-center col-span-1 lg:col-span-2"
           />
-          <motion.img 
-            src={logo3} 
-            alt="Software Technology Parks of India" 
-            className="w-auto h-[70px] lg:h-[120px] justify-self-center col-span-2 lg:col-span-2" 
+          <motion.img
+            src={logo3}
+            alt="Software Technology Parks of India"
+            className="w-auto h-[70px] lg:h-[120px] justify-self-center col-span-2 lg:col-span-2"
           />
-          
+
           {/* Bottom Row Logos (Desktop) */}
-          <motion.img 
-            src={logo4} 
-            alt="Electropreneurial Park" 
-            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-start-2 lg:col-span-2" 
+          <motion.img
+            src={logo4}
+            alt="Electropreneurial Park"
+            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-start-2 lg:col-span-2"
           />
-          <motion.img 
-            src={logo5} 
-            alt="MedTech" 
-            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-span-2" 
+          <motion.img
+            src={logo5}
+            alt="MedTech"
+            className="w-auto h-[60px] lg:h-[100px] justify-self-center col-span-1 lg:col-span-2"
           />
         </div>
         {/* === EDITED SECTION END === */}
