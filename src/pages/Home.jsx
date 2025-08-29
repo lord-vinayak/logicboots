@@ -67,7 +67,7 @@ const Home = () => {
       image: "/q2.jpg",
     },
     {
-      title: "Nanobots Cancer",
+      title: "Nanobots",
       subtitle: "Precise Drug Delivery",
       description:
         "Revolutionary nanobots designed for targeted cancer treatment and drug delivery.",
