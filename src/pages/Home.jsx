@@ -67,7 +67,7 @@ const Home = () => {
       image: "/q2.jpg",
     },
     {
-      title: "GIS Cable Plan",
+      title: "Digitizing Railways",
       subtitle: "GIS Cable Route Plan aur LLM for Railways",
       description:
         "Revolutionary GIS Mapping and Cable Route Plan for Railways designed for ease of use and efficiency.",
