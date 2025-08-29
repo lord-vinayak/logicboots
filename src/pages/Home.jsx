@@ -53,7 +53,7 @@ const Home = () => {
 
   const products = [
     {
-      title: "Robotic Vacuum",
+      title: "Vacuum Cleaners",
       subtitle: "AI-Powered Robotic Vacuum Cleaners",
       description:
         "Advanced robotic vacuum cleaners with AI navigation and smart home integration.",
@@ -67,17 +67,17 @@ const Home = () => {
       image: "/q2.jpg",
     },
     {
-      title: "Nanobots",
-      subtitle: "Precise Drug Delivery",
+      title: "GIS Cable Plan",
+      subtitle: "GIS Cable Route Plan aur LLM for Railways",
       description:
-        "Revolutionary nanobots designed for targeted cancer treatment and drug delivery.",
-      image: "/q4.jpg",
+        "Revolutionary GIS Mapping and Cable Route Plan for Railways designed for ease of use and efficiency.",
+      image: "/q8.jpg",
     },
     {
       title: "More...",
       subtitle: "Coming Soon",
       description:
-        "We are working on exciting new products. Stay tuned for more innovations.",
+        "We are working on exciting new products like AI nanobots for targeted drug delivery.",
       image: "/q5.jpg",
     },
   ];
