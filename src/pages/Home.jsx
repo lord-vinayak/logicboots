@@ -2,14 +2,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Banner from "../components/Banner";
 import SectionWrapper from "../components/SectionWrapper";
-import FeaturedCard from "../components/FeaturedCard";
-import ProductCard from "../components/ProductCard";
-import { Drone } from "lucide-react";
 import { Stethoscope } from "lucide-react";
 import { Dna } from "lucide-react";
-import { Bot } from "lucide-react";
-import { Microscope } from "lucide-react";
-import { Rocket } from "lucide-react";
 import { Marquee } from "../components/Marquee";
 import Divider from "@mui/material/Divider";
 import { Carousel } from "@material-tailwind/react";
@@ -22,6 +16,12 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import { ContactCard } from "../components/contact-card";
+import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react";
+import { Input } from "../components/ui/input";
+// import { Button } from "@/components/ui/button";
+import { Label } from "../components/ui/label";
+import { Textarea } from "../components/ui/textarea";
 
 import logo1 from "../assets/tides.png";
 import logo2 from "../assets/iitrLogo.png";
@@ -316,8 +316,58 @@ const Home = () => {
         {/* === EDITED SECTION END === */}
       </SectionWrapper>
 
+      <main className="relative flex size-full my-8 w-full items-center justify-center p-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-4xl mx-auto">
+          <div className="mx-auto max-w-5xl">
+            <ContactCard
+              title="Get in touch"
+              description="If you have any questions regarding our services or need help, please fill out the form here. We do our best to respond within 1 business day."
+              contactInfo={[
+                {
+                  icon: MailIcon,
+                  label: "Email",
+                  value: "info@logicboots.com",
+                },
+                {
+                  icon: MapPinIcon,
+                  label: "Address",
+                  value: "Tides, IIT Roorkee, India",
+                  className: "col-span-2",
+                },
+              ]}>
+              <form action="" className="w-full space-y-4">
+                <div className="flex flex-col gap-2">
+                  <Label>Name</Label>
+                  <Input type="text" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <Label>Email</Label>
+                  <Input type="email" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <Label>Phone</Label>
+                  <Input type="phone" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <Label>Message</Label>
+                  <Textarea />
+                </div>
+                <Button className="w-full" type="button">
+                  Submit
+                </Button>
+              </form>
+            </ContactCard>
+          </div>
+        </motion.div>
+      </main>
+
       {/* Industries Marquee */}
-      <SectionWrapper className="bg-white">
+      <SectionWrapper className="bg-gray-50">
         <Marquee repeat={4} className="[--duration:20s] font-manrope">
           <span>Healthcare</span>
           <Divider orientation="vertical" flexItem />
