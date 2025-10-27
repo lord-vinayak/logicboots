@@ -24,7 +24,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-manrope font-bold text-gray-900 mb-4">Quick Links</h3>
+            <h3 className="font-manrope font-bold text-gray-900 mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -47,19 +49,30 @@ const Footer = () => {
                   Products
                 </Link>
               </li>
+              {/* Add the new Privacy Policy link */}
+              <li>
+                <Link
+                  to="/privacy-policy"
+                  className="font-manrope text-gray-600 hover:text-primary-600 text-sm transition-colors">
+                  Privacy Policy
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-manrope font-bold text-gray-900 mb-4">Contact</h3>
+            <h3 className="font-manrope font-bold text-gray-900 mb-4">
+              Contact
+            </h3>
             <ul className="space-y-2">
               <li className="text-gray-600 text-sm">
-                <span className="font-manrope font-medium">Email:</span> info@logicboots.com
+                <span className="font-manrope font-medium">Email:</span>{" "}
+                contact@logicboots.com
               </li>
               <li className="text-gray-600 text-sm">
-                <span className="font-manrope font-medium">Location:</span> Tides, IIT
-                Roorkee, India
+                <span className="font-manrope font-medium">Location:</span>{" "}
+                Tides, IIT Roorkee, India
               </li>
             </ul>
           </div>
