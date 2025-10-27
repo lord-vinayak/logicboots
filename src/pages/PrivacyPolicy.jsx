@@ -100,7 +100,7 @@ const PrivacyPolicy = () => {
             Changes to this Policy
           </h2>
           <p className="font-manrope">
-            We may update this Privacy Policy from time to time. Updated
+            We may update this privacy policy from time to time. Updated
             versions will be posted on this page.
           </p>
 
