@@ -233,9 +233,12 @@ const Home = () => {
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <Link to="/products/ai-stethoscope">
+              <a
+                href="https://coeurai.net"
+                target="_blank"
+                rel="noopener noreferrer">
                 <Button>Read More</Button>
-              </Link>
+              </a>
             </CardFooter>
           </Card>
         </div>
