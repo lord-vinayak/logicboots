@@ -8,13 +8,15 @@ import FeaturedDetail from "./pages/FeaturedDetail";
 import ProductDetail from "./pages/ProductDetail";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import InternshipPopup from './components/InternshipPopup';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white">
+        <InternshipPopup />
         <Navbar />
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait"> 
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
