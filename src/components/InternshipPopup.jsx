@@ -148,7 +148,7 @@ const InternshipPopup = () => {
                   </div>
                   <div className="flex-1 flex justify-between items-center">
                     <div>
-                      <h4 className="text-sm font-bold text-white">Dec 23, 2025</h4>
+                      <h4 className="text-sm font-bold text-white">Jan 6, 2026</h4>
                       <p className="text-xs text-gray-400">09:00 AM - 05:00 PM</p>
                     </div>
                     <div className="text-xs font-mono bg-white/10 px-2 py-1 rounded text-white">
